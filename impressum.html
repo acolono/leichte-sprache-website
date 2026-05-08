@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Impressum – Leichte Sprache Checker, ein Produkt der ACOLONO GmbH." />
+  <title>Impressum – Leichte Sprache</title>
+  <link rel="icon" href="assets/favicon.ico" sizes="any" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <link rel="stylesheet" href="output.css" />
+</head>
+<body class="bg-surface-page text-ink font-sans min-h-screen flex flex-col">
+
+  <a class="skip-link" href="#main-content">Zum Hauptinhalt springen</a>
+
+  <header class="bg-primary-c sticky top-0 z-50 shadow-nav" role="banner">
+    <nav class="max-w-6xl mx-auto px-8 h-16 flex items-center gap-6 relative" aria-label="Hauptnavigation">
+      <a href="index.html" class="flex-shrink-0 rounded-lg p-1 hover:opacity-90" aria-label="Leichte Sprache – Startseite">
+        <img src="assets/leichte-sprache-logo.svg" alt="Leichte Sprache" width="103" height="37" />
+      </a>
+
+      <button class="nav-toggle ml-auto flex md:hidden items-center justify-center border-2 border-white/40 text-white px-2.5 py-1.5 rounded-lg hover:bg-white/10 text-lg leading-none" aria-expanded="false" aria-controls="nav-links" aria-label="Navigation öffnen">☰</button>
+
+      <ul id="nav-links" class="nav-links hidden md:flex gap-1 ml-auto items-center flex-col md:flex-row absolute md:static top-16 left-0 right-0 bg-primary-c md:bg-transparent px-4 pb-3 md:p-0 shadow-nav md:shadow-none border-t border-white/10 md:border-0" role="list">
+        <li><a href="index.html"          class="block px-3.5 py-2 rounded-lg text-[0.9375rem] text-white/85 hover:bg-white/10 hover:text-white aria-[current=page]:bg-accent aria-[current=page]:text-ink aria-[current=page]:font-bold transition-colors">Übersicht</a></li>
+        <li><a href="dev-docs.html"       class="block px-3.5 py-2 rounded-lg text-[0.9375rem] text-white/85 hover:bg-white/10 hover:text-white aria-[current=page]:bg-accent aria-[current=page]:text-ink aria-[current=page]:font-bold transition-colors">Developer Docs</a></li>
+        <li><a href="user-docs.html"      class="block px-3.5 py-2 rounded-lg text-[0.9375rem] text-white/85 hover:bg-white/10 hover:text-white aria-[current=page]:bg-accent aria-[current=page]:text-ink aria-[current=page]:font-bold transition-colors">Benutzer-Docs</a></li>
+        <li><a href="design-system.html"  class="block px-3.5 py-2 rounded-lg text-[0.9375rem] text-white/85 hover:bg-white/10 hover:text-white aria-[current=page]:bg-accent aria-[current=page]:text-ink aria-[current=page]:font-bold transition-colors">Design System</a></li>
+        <li><a href="https://check.leichte-sprache.ai/" target="_blank" rel="noopener noreferrer" class="block px-4 py-2 rounded-pill text-[0.9375rem] bg-accent text-ink font-bold hover:opacity-90 active:scale-[0.97] transition-all">Jetzt testen</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="bg-primary-c text-white pt-20 pb-16 px-8" aria-labelledby="hero-heading">
+    <div class="max-w-6xl mx-auto">
+      <div class="w-44 h-1.5 bg-accent rounded-pill mb-7" aria-hidden="true"></div>
+      <h1 id="hero-heading" class="text-5xl font-bold leading-tight mb-4">Impressum</h1>
+      <p class="text-2xl opacity-95">Angaben gemäß § 5 ECG</p>
+    </div>
+  </section>
+
+  <main id="main-content" tabindex="-1" class="flex-1 max-w-6xl mx-auto px-8 py-16 w-full">
+
+    <section aria-labelledby="company-heading">
+      <h2 id="company-heading" class="text-[1.75rem] font-bold text-primary mb-6">Herausgeber</h2>
+      <div class="bg-white rounded-xl p-8 shadow-card relative overflow-hidden max-w-lg">
+        <div class="absolute top-0 left-0 right-0 h-1 bg-accent" aria-hidden="true"></div>
+
+        <p class="text-[1.0625rem] font-bold text-ink mb-6">ACOLONO GmbH</p>
+
+        <dl class="flex flex-col gap-5">
+          <div>
+            <dt class="text-[0.75rem] font-bold text-ink-muted uppercase tracking-widest mb-1">Adresse</dt>
+            <dd class="text-ink leading-relaxed">
+              Fillgradergasse 12-14/1A<br />
+              1060 Wien
+            </dd>
+            <dd class="mt-1.5">
+              <a href="https://maps.google.com/?q=Fillgradergasse+12-14,+1060+Wien,+Austria" target="_blank" rel="noopener noreferrer" class="text-primary text-sm font-bold hover:underline">Route anzeigen</a>
+            </dd>
+          </div>
+
+          <div>
+            <dt class="text-[0.75rem] font-bold text-ink-muted uppercase tracking-widest mb-1">Telefon</dt>
+            <dd><a href="tel:+431305103" class="text-ink hover:text-primary transition-colors">+43 1 305 10 30</a></dd>
+          </div>
+
+          <div>
+            <dt class="text-[0.75rem] font-bold text-ink-muted uppercase tracking-widest mb-1">E-Mail</dt>
+            <dd><a href="mailto:office@acolono.com" class="text-primary font-bold hover:underline">office@acolono.com</a></dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-primary-c text-white py-8 px-8 mt-auto" role="contentinfo">
+    <div class="max-w-6xl mx-auto flex flex-wrap items-center justify-between gap-4">
+      <a href="index.html" class="rounded hover:opacity-90" aria-label="Leichte Sprache – Startseite">
+        <img src="assets/leichte-sprache-logo.svg" alt="Leichte Sprache" width="82" height="29" />
+      </a>
+      <p class="text-[0.8125rem] opacity-65">© 2026 Leichte Sprache KI – gefördert von <a href="https://netidee.at/" target="_blank" rel="noopener noreferrer" class="opacity-65 hover:opacity-100 transition-opacity no-underline">netidee.at</a></p>
+      <nav aria-label="Footer-Navigation">
+        <ul class="flex gap-6" role="list">
+          <li><a href="kontakt.html"    class="text-white/65 text-sm hover:text-white transition-colors no-underline">Kontakt</a></li>
+          <li><a href="impressum.html"   class="text-white/65 text-sm hover:text-white transition-colors no-underline">Impressum</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const navLinks = document.getElementById('nav-links');
+    toggle.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', isOpen);
+      toggle.setAttribute('aria-label', isOpen ? 'Navigation schließen' : 'Navigation öffnen');
+      toggle.textContent = isOpen ? '✕' : '☰';
+    });
+    document.addEventListener('click', e => {
+      if (!toggle.contains(e.target) && !navLinks.contains(e.target)) {
+        navLinks.classList.remove('is-open');
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.setAttribute('aria-label', 'Navigation öffnen');
+        toggle.textContent = '☰';
+      }
+    });
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape' && navLinks.classList.contains('is-open')) {
+        navLinks.classList.remove('is-open');
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.textContent = '☰';
+        toggle.focus();
+      }
+    });
+  </script>
+
+</body>
+</html>

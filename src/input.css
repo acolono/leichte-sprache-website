@@ -1,0 +1,78 @@
+/* ── Local fonts ── */
+@font-face {
+  font-family: 'Atkinson Hyperlegible';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('fonts/atkinson-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Atkinson Hyperlegible';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('fonts/atkinson-bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Atkinson Hyperlegible';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('fonts/atkinson-italic.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Atkinson Hyperlegible';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url('fonts/atkinson-bold-italic.woff2') format('woff2');
+}
+
+/* ── Tailwind base layers ── */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Skip link ── */
+.skip-link {
+  position: absolute;
+  top: -200%;
+  left: 1rem;
+  z-index: 9999;
+  padding: .75rem 1.5rem;
+  background: #fcd400;
+  color: #091e27;
+  font-weight: 700;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 1rem;
+  white-space: nowrap;
+}
+.skip-link:focus { top: 1rem; }
+
+/* ── Focus visible ring ── */
+:focus-visible {
+  outline: 3px solid #fcd400;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* ── Mobile nav open state ── */
+.nav-links.is-open { display: flex; }
+
+/* ── Reduced motion ── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    transition-duration: .01ms !important;
+    animation-duration: .01ms !important;
+  }
+  html { scroll-behavior: auto; }
+}
+
+/* ── Print ── */
+@media print {
+  .site-header, .site-footer, .skip-link { display: none; }
+}

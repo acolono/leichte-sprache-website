@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Benutzer-Dokumentation für den Leichte Sprache Checker – Anleitungen, Tipps und häufige Fragen für Endbenutzer." />
+  <title>Benutzer-Docs – Leichte Sprache</title>
+  <link rel="icon" href="assets/favicon.ico" sizes="any" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <link rel="stylesheet" href="output.css" />
+</head>
+<body class="bg-surface-page text-ink font-sans min-h-screen flex flex-col">
+
+  <a class="skip-link" href="#main-content">Zum Hauptinhalt springen</a>
+
+  <header class="bg-primary-c sticky top-0 z-50 shadow-nav" role="banner">
+    <nav class="max-w-6xl mx-auto px-8 h-16 flex items-center gap-6 relative" aria-label="Hauptnavigation">
+      <a href="index.html" class="flex-shrink-0 rounded-lg p-1 hover:opacity-90" aria-label="Leichte Sprache – Startseite">
+        <img src="assets/leichte-sprache-logo.svg" alt="Leichte Sprache" width="103" height="37" />
+      </a>
+
+      <button class="nav-toggle ml-auto flex md:hidden items-center justify-center border-2 border-white/40 text-white px-2.5 py-1.5 rounded-lg hover:bg-white/10 text-lg leading-none" aria-expanded="false" aria-controls="nav-links" aria-label="Navigation öffnen">☰</button>
+
+      <ul id="nav-links" class="nav-links hidden md:flex gap-1 ml-auto items-center flex-col md:flex-row absolute md:static top-16 left-0 right-0 bg-primary-c md:bg-transparent px-4 pb-3 md:p-0 shadow-nav md:shadow-none border-t border-white/10 md:border-0" role="list">
+        <li><a href="index.html"          class="block px-3.5 py-2 rounded-lg text-[0.9375rem] text-white/85 hover:bg-white/10 hover:text-white aria-[current=page]:bg-accent aria-[current=page]:text-ink aria-[current=page]:font-bold transition-colors">Übersicht</a></li>
+        <li><a href="dev-docs.html"       class="block px-3.5 py-2 rounded-lg text-[0.9375rem] text-white/85 hover:bg-white/10 hover:text-white aria-[current=page]:bg-accent aria-[current=page]:text-ink aria-[current=page]:font-bold transition-colors">Developer Docs</a></li>
+        <li><a href="user-docs.html"      aria-current="page" class="block px-3.5 py-2 rounded-lg text-[0.9375rem] text-white/85 hover:bg-white/10 hover:text-white aria-[current=page]:bg-accent aria-[current=page]:text-ink aria-[current=page]:font-bold transition-colors">Benutzer-Docs</a></li>
+        <li><a href="design-system.html"  class="block px-3.5 py-2 rounded-lg text-[0.9375rem] text-white/85 hover:bg-white/10 hover:text-white aria-[current=page]:bg-accent aria-[current=page]:text-ink aria-[current=page]:font-bold transition-colors">Design System</a></li>
+        <li><a href="https://check.leichte-sprache.ai/" target="_blank" rel="noopener noreferrer" class="block px-4 py-2 rounded-pill text-[0.9375rem] bg-accent text-ink font-bold hover:opacity-90 active:scale-[0.97] transition-all">Jetzt testen</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="bg-primary-c text-white pt-20 pb-16 px-8" aria-labelledby="hero-heading">
+    <div class="max-w-6xl mx-auto">
+      <div class="w-44 h-1.5 bg-accent rounded-pill mb-7" aria-hidden="true"></div>
+      <h1 id="hero-heading" class="text-5xl font-bold leading-tight mb-4">Benutzer-Dokumentation</h1>
+      <p class="text-2xl mb-1.5 opacity-95">Anleitungen für den Leichte Sprache Checker</p>
+      <p class="text-base opacity-75">Einstieg · Funktionen · Häufige Fragen</p>
+    </div>
+  </section>
+
+  <main id="main-content" tabindex="-1" class="flex-1 max-w-6xl mx-auto px-8 py-16 w-full">
+
+    <section class="mb-16" aria-labelledby="status-heading">
+      <h2 id="status-heading" class="text-[1.75rem] font-bold text-primary mb-6">Inhalt folgt in Kürze</h2>
+      <div class="bg-surface-low rounded-xl p-14 text-center border-2 border-dashed border-primary/15" role="status" aria-live="polite">
+        <span class="inline-block bg-accent text-ink font-bold text-[0.75rem] uppercase tracking-widest px-3 py-1 rounded-pill mb-4">In Arbeit</span>
+        <p class="text-ink-muted text-lg mb-1.5">Die Benutzer-Dokumentation wird derzeit erstellt.</p>
+        <p class="text-ink-muted text-lg">Hier werden Schritt-für-Schritt-Anleitungen, Erklärungen der Funktionen und häufig gestellte Fragen zu finden sein.</p>
+      </div>
+    </section>
+
+    <section class="mb-16" aria-labelledby="planned-heading">
+      <h2 id="planned-heading" class="text-[1.75rem] font-bold text-ink mb-6">Geplante Inhalte</h2>
+      <ul class="grid grid-cols-[repeat(auto-fill,minmax(260px,1fr))] gap-4" role="list">
+        <li class="bg-white rounded-xl p-5 shadow-card flex items-start gap-3">
+          <span class="text-2xl leading-none mt-0.5 flex-shrink-0" aria-hidden="true">🚀</span>
+          <div>
+            <div class="text-[0.9375rem] font-bold text-primary mb-1">Erste Schritte</div>
+            <p class="text-[0.8125rem] text-ink-muted leading-snug">So starten Sie mit dem Leichte Sprache Checker – Registrierung, Einrichtung und Ihr erster Text.</p>
+          </div>
+        </li>
+        <li class="bg-white rounded-xl p-5 shadow-card flex items-start gap-3">
+          <span class="text-2xl leading-none mt-0.5 flex-shrink-0" aria-hidden="true">✍️</span>
+          <div>
+            <div class="text-[0.9375rem] font-bold text-primary mb-1">Text übersetzen</div>
+            <p class="text-[0.8125rem] text-ink-muted leading-snug">Schritt-für-Schritt-Anleitung zur Übersetzung von Texten in Leichte Sprache.</p>
+          </div>
+        </li>
+        <li class="bg-white rounded-xl p-5 shadow-card flex items-start gap-3">
+          <span class="text-2xl leading-none mt-0.5 flex-shrink-0" aria-hidden="true">⚡</span>
+          <div>
+            <div class="text-[0.9375rem] font-bold text-primary mb-1">Funktionen im Überblick</div>
+            <p class="text-[0.8125rem] text-ink-muted leading-snug">Alle Features des Checkers – Editor, Vorschau, Export und Bearbeitungsmodus.</p>
+          </div>
+        </li>
+        <li class="bg-white rounded-xl p-5 shadow-card flex items-start gap-3">
+          <span class="text-2xl leading-none mt-0.5 flex-shrink-0" aria-hidden="true">💾</span>
+          <div>
+            <div class="text-[0.9375rem] font-bold text-primary mb-1">Texte verwalten</div>
+            <p class="text-[0.8125rem] text-ink-muted leading-snug">Projekte anlegen, Texte speichern, exportieren und in verschiedenen Formaten herunterladen.</p>
+          </div>
+        </li>
+        <li class="bg-white rounded-xl p-5 shadow-card flex items-start gap-3">
+          <span class="text-2xl leading-none mt-0.5 flex-shrink-0" aria-hidden="true">♿</span>
+          <div>
+            <div class="text-[0.9375rem] font-bold text-primary mb-1">Barrierefreiheit</div>
+            <p class="text-[0.8125rem] text-ink-muted leading-snug">So nutzen Sie den Checker mit Screenreader, Tastaturnavigation und anderen Hilfsmitteln.</p>
+          </div>
+        </li>
+        <li class="bg-white rounded-xl p-5 shadow-card flex items-start gap-3">
+          <span class="text-2xl leading-none mt-0.5 flex-shrink-0" aria-hidden="true">❓</span>
+          <div>
+            <div class="text-[0.9375rem] font-bold text-primary mb-1">Häufige Fragen (FAQ)</div>
+            <p class="text-[0.8125rem] text-ink-muted leading-snug">Antworten auf die häufigsten Fragen rund um Leichte Sprache und den Checker.</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="nav-heading">
+      <h2 id="nav-heading" class="text-[1.75rem] font-bold text-ink mb-6">Weitere Seiten</h2>
+      <nav aria-label="Weiterführende Seiten">
+        <ul class="grid grid-cols-[repeat(auto-fill,minmax(240px,1fr))] gap-4" role="list">
+          <li><a href="index.html"         class="block bg-surface rounded-[10px] p-5 no-underline text-inherit hover:-translate-y-0.5 hover:shadow-card-lg transition-all"><div class="text-[0.9375rem] font-bold text-primary mb-1.5">Übersicht</div><p class="text-[0.8125rem] text-ink-muted leading-snug">Zurück zur Startseite mit allgemeinen Projektinformationen.</p></a></li>
+          <li><a href="dev-docs.html"      class="block bg-surface rounded-[10px] p-5 no-underline text-inherit hover:-translate-y-0.5 hover:shadow-card-lg transition-all"><div class="text-[0.9375rem] font-bold text-primary mb-1.5">Developer Dokumentation</div><p class="text-[0.8125rem] text-ink-muted leading-snug">Technische Referenz und Integrationsanleitungen für Entwickler.</p></a></li>
+          <li><a href="design-system.html" class="block bg-surface rounded-[10px] p-5 no-underline text-inherit hover:-translate-y-0.5 hover:shadow-card-lg transition-all"><div class="text-[0.9375rem] font-bold text-primary mb-1.5">Design System</div><p class="text-[0.8125rem] text-ink-muted leading-snug">Farben, Typografie und Komponenten des „The Guided Path" Design Systems.</p></a></li>
+        </ul>
+      </nav>
+    </section>
+
+  </main>
+
+  <footer class="bg-primary-c text-white py-8 px-8 mt-auto" role="contentinfo">
+    <div class="max-w-6xl mx-auto flex flex-wrap items-center justify-between gap-4">
+      <a href="index.html" class="rounded hover:opacity-90" aria-label="Leichte Sprache – Startseite">
+      <img src="assets/leichte-sprache-logo.svg" alt="Leichte Sprache" width="82" height="29" />
+    </a>
+      <p class="text-[0.8125rem] opacity-65">© 2026 Leichte Sprache KI – gefördert von <a href="https://netidee.at/" target="_blank" rel="noopener noreferrer" class="opacity-65 hover:opacity-100 transition-opacity no-underline">netidee.at</a></p>
+      <nav aria-label="Footer-Navigation">
+        <ul class="flex gap-6" role="list">
+          <li><a href="kontakt.html"    class="text-white/65 text-sm hover:text-white transition-colors no-underline">Kontakt</a></li>
+          <li><a href="impressum.html"   class="text-white/65 text-sm hover:text-white transition-colors no-underline">Impressum</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const navLinks = document.getElementById('nav-links');
+    toggle.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', isOpen);
+      toggle.setAttribute('aria-label', isOpen ? 'Navigation schließen' : 'Navigation öffnen');
+      toggle.textContent = isOpen ? '✕' : '☰';
+    });
+    document.addEventListener('click', e => {
+      if (!toggle.contains(e.target) && !navLinks.contains(e.target)) {
+        navLinks.classList.remove('is-open');
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.setAttribute('aria-label', 'Navigation öffnen');
+        toggle.textContent = '☰';
+      }
+    });
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape' && navLinks.classList.contains('is-open')) {
+        navLinks.classList.remove('is-open');
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.textContent = '☰';
+        toggle.focus();
+      }
+    });
+  </script>
+
+</body>
+</html>

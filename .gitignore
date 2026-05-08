@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+
+# IDE / editor
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Claude Code
+.claude/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Temporary files
+*.log
+*.tmp
+*.swp
+*~
