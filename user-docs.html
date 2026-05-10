@@ -56,61 +56,35 @@
 
   <main id="main-content" tabindex="-1" class="flex-1 max-w-6xl mx-auto px-8 py-16 w-full">
 
-    <section class="mb-16" aria-labelledby="status-heading">
-      <h2 id="status-heading" class="text-[1.75rem] font-bold text-primary mb-6">Inhalt folgt in Kürze</h2>
-      <div class="bg-surface-low rounded-xl p-14 text-center border-2 border-dashed border-primary/15" role="status" aria-live="polite">
-        <span class="inline-block bg-accent text-ink font-bold text-[0.75rem] uppercase tracking-widest px-3 py-1 rounded-pill mb-4">In Arbeit</span>
-        <p class="text-ink-muted text-lg mb-1.5">Die Benutzer-Dokumentation wird derzeit erstellt.</p>
-        <p class="text-ink-muted text-lg">Hier werden Schritt-für-Schritt-Anleitungen, Erklärungen der Funktionen und häufig gestellte Fragen zu finden sein.</p>
+    <!-- Main docs link -->
+    <section class="mb-16" aria-labelledby="docs-heading">
+      <h2 id="docs-heading" class="text-[1.75rem] font-bold text-primary mb-6">Benutzer-Dokumentation</h2>
+      <div class="bg-primary-c rounded-xl pl-9 pr-8 py-8 relative overflow-hidden">
+        <div class="absolute left-0 top-0 bottom-0 w-1.5 bg-accent" aria-hidden="true"></div>
+        <span class="block w-fit bg-accent text-ink font-bold text-[0.75rem] uppercase tracking-widest px-3 py-1 rounded-pill mb-5">Deutsch</span>
+        <h3 class="text-[1.375rem] font-bold text-white mb-3">Leichte Sprache Checker – Bedienungsanleitung</h3>
+        <p class="text-white leading-7 mb-6 max-w-2xl">Die vollständige Bedienungsanleitung für den Leichte Sprache Checker: Erste Schritte, Anleitungen, Funktionsübersicht, Browser-Extension und häufige Fragen.</p>
+        <a href="https://acolono.github.io/leichte-sprache-docs-user/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-7 py-3 rounded-pill bg-accent text-ink font-bold text-[0.9375rem] hover:opacity-90 active:scale-[0.97] transition-all">Zur Dokumentation</a>
       </div>
     </section>
 
-    <section class="mb-16" aria-labelledby="planned-heading">
-      <h2 id="planned-heading" class="text-[1.75rem] font-bold text-ink mb-6">Geplante Inhalte</h2>
-      <ul class="grid grid-cols-[repeat(auto-fill,minmax(260px,1fr))] gap-4" role="list">
-        <li class="bg-white rounded-xl p-5 shadow-card flex items-start gap-3">
-          <span class="text-2xl leading-none mt-0.5 flex-shrink-0" aria-hidden="true">🚀</span>
-          <div>
-            <div class="text-[0.9375rem] font-bold text-primary mb-1">Erste Schritte</div>
-            <p class="text-[0.8125rem] text-ink-muted leading-snug">So starten Sie mit dem Leichte Sprache Checker – Registrierung, Einrichtung und Ihr erster Text.</p>
-          </div>
-        </li>
-        <li class="bg-white rounded-xl p-5 shadow-card flex items-start gap-3">
-          <span class="text-2xl leading-none mt-0.5 flex-shrink-0" aria-hidden="true">✍️</span>
-          <div>
-            <div class="text-[0.9375rem] font-bold text-primary mb-1">Text übersetzen</div>
-            <p class="text-[0.8125rem] text-ink-muted leading-snug">Schritt-für-Schritt-Anleitung zur Übersetzung von Texten in Leichte Sprache.</p>
-          </div>
-        </li>
-        <li class="bg-white rounded-xl p-5 shadow-card flex items-start gap-3">
-          <span class="text-2xl leading-none mt-0.5 flex-shrink-0" aria-hidden="true">⚡</span>
-          <div>
-            <div class="text-[0.9375rem] font-bold text-primary mb-1">Funktionen im Überblick</div>
-            <p class="text-[0.8125rem] text-ink-muted leading-snug">Alle Features des Checkers – Editor, Vorschau, Export und Bearbeitungsmodus.</p>
-          </div>
-        </li>
-        <li class="bg-white rounded-xl p-5 shadow-card flex items-start gap-3">
-          <span class="text-2xl leading-none mt-0.5 flex-shrink-0" aria-hidden="true">💾</span>
-          <div>
-            <div class="text-[0.9375rem] font-bold text-primary mb-1">Texte verwalten</div>
-            <p class="text-[0.8125rem] text-ink-muted leading-snug">Projekte anlegen, Texte speichern, exportieren und in verschiedenen Formaten herunterladen.</p>
-          </div>
-        </li>
-        <li class="bg-white rounded-xl p-5 shadow-card flex items-start gap-3">
-          <span class="text-2xl leading-none mt-0.5 flex-shrink-0" aria-hidden="true">♿</span>
-          <div>
-            <div class="text-[0.9375rem] font-bold text-primary mb-1">Barrierefreiheit</div>
-            <p class="text-[0.8125rem] text-ink-muted leading-snug">So nutzen Sie den Checker mit Screenreader, Tastaturnavigation und anderen Hilfsmitteln.</p>
-          </div>
-        </li>
-        <li class="bg-white rounded-xl p-5 shadow-card flex items-start gap-3">
-          <span class="text-2xl leading-none mt-0.5 flex-shrink-0" aria-hidden="true">❓</span>
-          <div>
-            <div class="text-[0.9375rem] font-bold text-primary mb-1">Häufige Fragen (FAQ)</div>
-            <p class="text-[0.8125rem] text-ink-muted leading-snug">Antworten auf die häufigsten Fragen rund um Leichte Sprache und den Checker.</p>
-          </div>
-        </li>
-      </ul>
+    <!-- Section links -->
+    <section class="mb-16" aria-labelledby="sections-heading">
+      <h2 id="sections-heading" class="text-[1.75rem] font-bold text-ink mb-6">Direkt zu einem Abschnitt</h2>
+      <nav aria-label="Dokumentations-Abschnitte">
+        <ul class="grid grid-cols-[repeat(auto-fill,minmax(240px,1fr))] gap-4" role="list">
+          <li><a href="https://acolono.github.io/leichte-sprache-docs-user/erste-schritte/ueberblick.html" target="_blank" rel="noopener noreferrer" class="block bg-surface rounded-[10px] p-5 no-underline text-inherit hover:-translate-y-0.5 hover:shadow-card-lg transition-all"><div class="text-[0.9375rem] font-bold text-primary mb-1.5">Erste Schritte</div><p class="text-[0.8125rem] text-ink-muted leading-snug">Überblick über den Einstieg – was Sie brauchen und wie es funktioniert.</p></a></li>
+          <li><a href="https://acolono.github.io/leichte-sprache-docs-user/erste-schritte/erster-text.html" target="_blank" rel="noopener noreferrer" class="block bg-surface rounded-[10px] p-5 no-underline text-inherit hover:-translate-y-0.5 hover:shadow-card-lg transition-all"><div class="text-[0.9375rem] font-bold text-primary mb-1.5">Ihr erster Text</div><p class="text-[0.8125rem] text-ink-muted leading-snug">Schritt für Schritt: Ihren ersten Text eingeben und übersetzen lassen.</p></a></li>
+          <li><a href="https://acolono.github.io/leichte-sprache-docs-user/anleitungen/text-uebersetzen.html" target="_blank" rel="noopener noreferrer" class="block bg-surface rounded-[10px] p-5 no-underline text-inherit hover:-translate-y-0.5 hover:shadow-card-lg transition-all"><div class="text-[0.9375rem] font-bold text-primary mb-1.5">Text übersetzen</div><p class="text-[0.8125rem] text-ink-muted leading-snug">Anleitung zur Übersetzung komplexer Texte in Leichte Sprache.</p></a></li>
+          <li><a href="https://acolono.github.io/leichte-sprache-docs-user/anleitungen/text-pruefen.html" target="_blank" rel="noopener noreferrer" class="block bg-surface rounded-[10px] p-5 no-underline text-inherit hover:-translate-y-0.5 hover:shadow-card-lg transition-all"><div class="text-[0.9375rem] font-bold text-primary mb-1.5">Text prüfen</div><p class="text-[0.8125rem] text-ink-muted leading-snug">Übersetztes Ergebnis prüfen, bearbeiten und verfeinern.</p></a></li>
+          <li><a href="https://acolono.github.io/leichte-sprache-docs-user/anleitungen/export-download.html" target="_blank" rel="noopener noreferrer" class="block bg-surface rounded-[10px] p-5 no-underline text-inherit hover:-translate-y-0.5 hover:shadow-card-lg transition-all"><div class="text-[0.9375rem] font-bold text-primary mb-1.5">Export & Download</div><p class="text-[0.8125rem] text-ink-muted leading-snug">Fertige Texte exportieren und in verschiedenen Formaten herunterladen.</p></a></li>
+          <li><a href="https://acolono.github.io/leichte-sprache-docs-user/funktionen/editor-vorschau.html" target="_blank" rel="noopener noreferrer" class="block bg-surface rounded-[10px] p-5 no-underline text-inherit hover:-translate-y-0.5 hover:shadow-card-lg transition-all"><div class="text-[0.9375rem] font-bold text-primary mb-1.5">Editor & Vorschau</div><p class="text-[0.8125rem] text-ink-muted leading-snug">Der eingebaute Editor und die Vorschau-Ansicht im Überblick.</p></a></li>
+          <li><a href="https://acolono.github.io/leichte-sprache-docs-user/funktionen/bearbeitungsmodus.html" target="_blank" rel="noopener noreferrer" class="block bg-surface rounded-[10px] p-5 no-underline text-inherit hover:-translate-y-0.5 hover:shadow-card-lg transition-all"><div class="text-[0.9375rem] font-bold text-primary mb-1.5">Bearbeitungsmodus</div><p class="text-[0.8125rem] text-ink-muted leading-snug">Übersetzte Texte manuell nachbearbeiten und anpassen.</p></a></li>
+          <li><a href="https://acolono.github.io/leichte-sprache-docs-user/funktionen/hix-score.html" target="_blank" rel="noopener noreferrer" class="block bg-surface rounded-[10px] p-5 no-underline text-inherit hover:-translate-y-0.5 hover:shadow-card-lg transition-all"><div class="text-[0.9375rem] font-bold text-primary mb-1.5">HIX-Score & Bewertung</div><p class="text-[0.8125rem] text-ink-muted leading-snug">Verständlichkeitsbewertung verstehen und gezielt verbessern.</p></a></li>
+          <li><a href="https://acolono.github.io/leichte-sprache-docs-user/browser-extension/ueberblick.html" target="_blank" rel="noopener noreferrer" class="block bg-surface rounded-[10px] p-5 no-underline text-inherit hover:-translate-y-0.5 hover:shadow-card-lg transition-all"><div class="text-[0.9375rem] font-bold text-primary mb-1.5">Browser-Extension</div><p class="text-[0.8125rem] text-ink-muted leading-snug">Texte direkt im Browser markieren und übersetzen – Installation und Nutzung.</p></a></li>
+          <li><a href="https://acolono.github.io/leichte-sprache-docs-user/faq.html" target="_blank" rel="noopener noreferrer" class="block bg-surface rounded-[10px] p-5 no-underline text-inherit hover:-translate-y-0.5 hover:shadow-card-lg transition-all"><div class="text-[0.9375rem] font-bold text-primary mb-1.5">Häufige Fragen (FAQ)</div><p class="text-[0.8125rem] text-ink-muted leading-snug">Antworten auf die häufigsten Fragen rund um den Leichte Sprache Checker.</p></a></li>
+        </ul>
+      </nav>
     </section>
 
     <section aria-labelledby="nav-heading">
